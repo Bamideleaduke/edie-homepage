@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind output -->
+    <link rel="stylesheet" href="src/input.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- material icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <!-- font family -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <title>Edie Homepage</title>
+</head>
+<body class="bg-zinc-50 font-Poppins">
+    <div class="body container m-auto w-11/12 ">
+      
+          <header class="w-full pt-5 font-Heebo">
+              <div class="logo flex flex-row justify-between mb-4">
+                  <h2 class="logo-name text-2xl font-bold font-Heebo">Edie</h2>
+                  <button class="menu-icon open-btn"> <span class="material-icons text-3xl" id="icon">&#xe5d2;</span></button>
+              </div>
+                    <div class="collapse ">
+                        <nav class=" nav-menu w-full h-[90vh] ">
+                            <button class="menu-icon  close-btn"> <span class="material-icons  text-3xl" id="icon">&#xe5cd;</span></button>
+                            <ul class=" nav-list pt-[45%]  flex flex-col py-6 pl-10 text-[#333333] font-normal justify-center items-center ">
+                                <li class="nItem mb-3 text-3xl"><a href="#hero">Home</a></li>
+                                <li class=" nItem mb-3 text-3xl"><a href="#services">Services</a></li>
+                                <li class="nItem mb-3 text-3xl"><a href="#ourWork">Our Works</a></li>
+                                <li class="nItem mb-3 text-3xl"><a href="#client">Clients</a></li>
+                                <li class="nItem mb-3 text-3xl"><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                 
+             
+          </header>
+         <main>
+        <section id="hero" class="hero pt-14">
+                <div class="hero-content" >
+                   <div class="textt">
+                    <h5 class="pl-6  text-sm text-[#2d9cd8]">Unhappy with your website?</h5>
+                    <p class="hero-text pl-6 text-3xl pr-8 font-bold">
+                        We create beautiful and fast web services
+                    </p>
+                   </div>
+                    <img class="rounded-2xl w-full my-5" src="./asset/heroImage.jpg" alt="image">
+                   <div class="text">
+                    <p class="hero-text pl-6 font-bold text-3xl pr-8">
+                        Story, emotion and purpose
+                    </p>
+                    <p class="pl-6 mt-8 text-[#4f4f4f]">
+                        We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+                    </p>
+
+                    <form class="ml-6 mr-6 mt-8 relative">
+                        <label class="mb-4 text-[#828282]" for="">want us to contact you?</label>
+                        <br>
+                        <input class="p-4 bg-[#f2f2f2] rounded-xl w-full mt-4" type="text" placeholder="Email">
+                        <br>
+                        <button class="bg-[#2d9cd8] text-white font-bold px-6 py-4 rounded-xl absolute bottom-0 right-0 z-index-1">join</button>
+                    </form>
+                   </div>
+                </div>
+      </section>
+      <section id="services" class="services ml-6">
+
+            <h4 class="title font-bold my-[6rem] text-3xl w-[70%]">We offer high demand services  </h4>
+            <div class="service-display flex flex-col items-center justify-center w-full">
+                <div class="service-item  mb-[5rem] px-4 py-10 pr-6 ">
+                    <span class="material-icons bg-[#2d9cdb] text-5xl text-[white] p-4 rounded-2xl" >&#xe3c9;</span>
+
+                    <h5 class="text-2xl mt-6 font-bold">UI/UX Design</h5>
+                    <p class="my-6 text-[#4f4f4f]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                    <button class="bg-[#e0e0e0] text-[#828282] px-3 py-2 rounded-xl ">Get started</button>
+                </div>
+                <div class="service-item mb-[5rem] px-4 py-10 pr-6 border-2">
+                    <span class="material-icons bg-[#27ae60] text-5xl text-[white] p-4 rounded-2xl">&#xe86f;</span>
+                    
+                    <h5 class="text-2xl mt-6 font-bold">UI/UX Design</h5>
+                    <p class="justify-left my-6 text-[#4f4f4f]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                    <button class="bg-[#e0e0e0] text-[#828282] px-3 py-2 rounded-xl">Get started</button>
+                </div>
+                <div class="service-item mb-[5rem] px-4 py-10 pr-6">
+                    <span class="material-icons bg-[#eb5757] text-5xl text-[white] p-4 rounded-2xl">&#xe896;</span>
+                    <h5 class="text-2xl mt-6 text-[#4f4f4f] font-bold">UI/UX Design</h5>
+                    <p class="my-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                    <button class="bg-[#e0e0e0] text-[#828282] px-3 py-2 rounded-xl">Get started</button>
+                </div>
+            </div>
+      </section>
+      <section id="ourWork" class="design ">
+          <h4 class="text-3xl w-[70%] mb-2 font-bold ">Good design means good business</h4>
+          
+            <div class="design-display flex flex-col items-center justify-between w-[100%] ">
+             
+              <div class="one basis-[47%] pt-[30%]">
+                <figure class="mb-14">
+                    <img class="rounded-2xl" src="./asset/smarthome.jpg" alt="">
+                    <figcaption class="text-[1.3rem] font-medium"><span class="text-[#828282] text-sm font-light" >full stack application</span>
+                    <br>
+                        Smart home dashboard</figcaption>
+                  </figure>
+             
+          
+              <figure class="mb-14">
+                <img class="rounded-2xl" src="./asset/onboard.png" alt="">
+                <figcaption class=" text-[1.3rem] font-medium"><span class="text-[#828282] text-sm font-light" >UX/UI design</span>
+                <br>
+                Onboard application</figcaption>
+                </figure>
+              </div>
+          
+          
+             <div class="two basis-[47%]"> 
+                 <figure class="mb-14">
+                <img class="rounded-2xl" src="./asset/booking.png" alt="">
+                <figcaption class="text-[1.3rem] font-medium"><span class="text-[#828282] text-sm font-light" >Mobile application</span>
+                <br>
+                Booking system</figcaption>
+              </figure>
+              <figure class="mb-10">
+                <img class="rounded-2xl" src="./asset/juice-product.png" alt="">
+                <figcaption class="text-[1.3rem] font-medium"><span class="text-[#828282] text-sm font-light" >Front End application</span>
+                <br>
+                Juice product homepage</figcaption>
+              </figure></div>
+          </div>
+          <p class="see-more text-[#2d9cdb] mb-10 font-medium">see more  &rightarrow;</p>
+      </section>
+
+      <section id="client" class="team">
+         <div class="team-flex">
+            <div class="meet-team my-12 font-medium">
+                <p class="text-[#eb5757] ">Meet the team</p>
+                <h5 class="text-3xl w-[70%] my-4 font-bold">We are chilled and a laidback team</h5>
+                <p class="w-[50%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="team-img flex flex-row justify-between">
+                  <div class="imagee basis-[47%]">
+                      <img class="w-full pt-[50%] pb-0 rounded-3xl" src="./asset/person3.png" alt="">
+                  </div>
+                  <div class="others basis-[47%]">
+                      <img class="w-full rounded-3xl mb-8 "src="./asset/person1.png" alt="">
+                      <img class="w-full rounded-3xl " src="./asset/person2.png" alt="">
+                  </div>
+              </div>
+         </div>
+
+          <div class="team-capability my-12">
+              <p class="team-capability-text text-2xl font-semibold my-8 ">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”    </p>
+              <div class="team-id flex flex-row justify-justify items-center">
+                 <div class="imgg basis-[10%]">
+                    <img class="w-full rounded-2xl" src="./asset/person4.png" alt="">
+                 </div>
+                  <p class="basis-[70%] text-2xl font-bold mx-4">
+                    Carlos Tran
+                    <br>
+                      <span class="mt-16 mb-0 font-light text-sm text-[#828282]">The Decorate Gatsby</span>
+                  </p>
+              </div>
+          </div>
+      </section>
+      
+         </main>
+     
+    </div>
+    <footer id="contact" class="bg-[#100e1d] text-[#ffffff] py-10 pl-6 font-normal">
+        <div class="foot-flex flex flex-col">
+         <ul class="nav-list-foot ">
+             <li ><a href="#">Home</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Our Works</a></li>
+             <li><a href="#">Clients</a></li>
+             <li><a href="#">Contact</a></li>
+         </ul>
+         <div class="social my-10">
+             <h5 class="text-3xl font-bold my-4">Edie</h5>
+             <div class="s-flex flex flex-row">
+                 <img src="./asset/instagram.svg" alt="">
+                 <img class="mx-2" src="./asset/linkedin.svg" alt="">
+                 <img src="./asset/twitter.svg" alt="">
+             </div>
+         </div>
+         <form class="foot-form mr-6 mt-8 relative">
+            
+            <input class="p-4 bg-[#f2f2f2] rounded-xl w-full mt-4" type="text" placeholder="Email">
+            <br>
+            <button class="bg-[#2d9cd8] text-white font-bold px-6 py-4 rounded-xl absolute bottom-0 right-0 z-index-1">join</button>
+        </form>
+        </div>
+        <p class="text-center text-[#bdbdbd] mt-[5rem]">&copy;bamideleaduke - devchallenge.io</p>
+    </footer>
+       <!-- Javascript -->
+       <script src="./javascript/script.js"></script>
+</body>
+</html>
+

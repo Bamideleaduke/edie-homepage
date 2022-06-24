@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.collapse{
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateY(200%);
+    display: none;
+}
+.close-btn{
+    float: right;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+.hide{
+    transform: translateY(0%);
+    display: block;
+}
+@media only screen and (min-width:768px){
+   .collapse{
+    display: initial;
+   }
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    .collapse{
+        background-color: transparent;
+    }
+    .nav-menu{
+      
+       display: initial;
+    }
+ 
+    .nav-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+       
+    }
+    .nav-list li{
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
+    #icon{
+        display: none;
+    }
+    .text{
+        width: 50%;
+        padding-left: 4rem;
+    }
+    .textt{
+        padding-left: 4rem;
+        width: 60%;
+    }
+    .see-more{
+            text-align: right;
+    }
+    .team-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .meet-team{
+        flex-basis: 50%;
+    }
+    .service-display{
+        flex-direction: row;
+    }
+    .service-item{
+        width:100%;
+        
+    }
+    .team-capability-text{
+        width: 65%;
+    }
+  
+    .title{
+        display: block;
+        width: 40%;
+       
+        
+    }
+    .design-display{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }.design-display>figure{
+        flex-basis: 40%;
+    }
+    .design h4{
+        display: block;
+        width: 35%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .foot-flex{
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    .foot-form button{
+      bottom: 49%;
+    
+
+    }
+}
